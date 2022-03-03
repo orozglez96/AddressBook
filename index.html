@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Address Book</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <ul class="navigation">
+      <li id="addC">Add Contact</li>
+      <li id="searchTab">Search</li>
+      <li id="cList">Contact List</li>
+    </ul>
+    <div id="submission"> 
+      <form method="POST" id="subForm">
+        <label for="fname">First name:</label><br>
+        <input type="text" name="fname" id="fname" onkeyup="lettersOnly(this)"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" name="lname" id="lname" onkeyup="lettersOnly(this)"><br>
+        <label for="phone">Phone number:</label><br>
+        <input type="text" name="phone" id="phone" onkeyup="numbersOnly(this)"><br>
+        <label for="address">Address:</label><br>
+        <input type="text" name="address" id="address"><br><br>
+        <input type="submit" value="Submit" id="sub">
+      </form>
+      <div id="validation"></div>
+    </div><br>
+    <div id="contactList" class="hidden">
+      <table id="dataTable">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Address</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+    <div id="searchC" class="hidden">
+      <form id="lookUpTool">
+        <label for="contactos">Type full name</label>
+        <input type="text" name="contactos" id="contactos">
+        <input type="submit" value="Search" id="LUT">
+      </form>
+    </div>
+    <div id="contactCard" class="hidden">
+      <button id="eliminar" class="hidden">remove</button>
+      <h1 id="result"></h1>
+      <p id="contactInfo"></p>
+    </div>
+    <div id="warning"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

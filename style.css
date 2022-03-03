@@ -1,0 +1,95 @@
+body{
+  background: #bcd9f4;
+}
+
+.navigation{
+  background-color: #3465a4;
+  box-sizing: border-box;
+  overflow: auto;
+  padding: 25px;
+  text-align: center;
+  width: 100%;
+}
+
+li{
+  color: #FFF;
+  background-color: #204a87;
+  display: inline-block;
+  font-family: Helvetica;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 20px 18px 10px 18px;
+  text-transform: uppercase;
+  border: thin solid white; 
+}
+li:hover{
+  background-color: #729fcf;
+}
+form{
+  text-align: center;
+  font-family: Helvetica;
+  font-weight: bold;
+}
+#sub, #LUT{
+  background-color: #204a87;
+  color: #FFF;
+}
+#sub:hover{
+  background-color: #729fcf;
+}
+
+#LUT:hover{
+  background-color: #729fcf;
+}
+
+.hidden
+{
+   display: none
+}
+
+table{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th{
+  color: #FFF;
+  background-color: #204a87;
+  font-family: Helvetica;
+  border: thin solid white;
+  padding: 10px 50px 10px 50px;
+}
+
+tr{
+  color: #000000;
+  background-color: #ffffff;
+  font-family: Helvetica;
+  border: thin solid black;
+  text-align: center;
+}
+
+#contactCard{
+  color: #FFF;
+  background-color: #3465a4;
+  padding: 20px 60px 20px 60px;
+  margin: 50px;
+}
+
+h1{
+  background-color: #204a87;
+  padding: 10px 25px 10px 50px;
+  margin: 30px;
+}
+
+p{
+  font-family: Helvetica;
+  font-weight: bold;
+}
+
+#eliminar{
+  background-color: #ef2929;
+  color: #FFF;
+  float: right;
+  
+}
